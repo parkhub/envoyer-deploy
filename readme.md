@@ -2,6 +2,7 @@
 
 ![Downloads](https://img.shields.io/packagist/dt/justpark/envoyer-deploy.svg)
 ![Release](https://img.shields.io/github/release/justpark/envoyer-deploy.svg)
+![License](https://img.shields.io/github/license/justpark/envoyer-deploy.svg)
 
 # Envoyer Deploy Command
 
