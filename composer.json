@@ -1,0 +1,24 @@
+{
+    "name": "justpark/envoyer-deploy",
+    "description": "JustPark Envoyer Deploy Command",
+    "keywords": ["justpark", "envoyer", "envoyer.io", "deploy", "framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "homepage": "http://www.justpark.com",
+    "authors": [
+        {
+            "name":     "Dayle Rees",
+            "email":    "me@daylerees.com",
+            "homepage": "http://daylerees.com",
+            "role":     "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JustPark\\Deploy\\": "src"
+        }
+    },
+}
