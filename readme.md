@@ -27,31 +27,36 @@ First you'll need to install the [Composer package](https://packagist.org/packag
 
 Simply add the following to the `"require-dev"` section of your `composer.json` file, and `composer update`.
 
-    "justpark/envoyer-deploy": "v1.0.*"
+```json
+"justpark/envoyer-deploy": "v1.0.*"
+```
 
 Next, you'll need to add the `ServiceProvider` for this command to the `providers` array within your `config/app.php` file.
 
-    'providers' => [
+```php
+'providers' => [
 
-        /*
-         * Loads of other providers here...
-         */
+    /*
+     * Loads of other providers here...
+     */
 
-        'JustPark\Deploy\ServiceProviders\EnvoyerServiceProvider',
+    'JustPark\Deploy\ServiceProviders\EnvoyerServiceProvider',
 
-    ],
+],
+```
 
 Finally, you'll want to copy [this config file](config/envoyer.php) into your config directory. The `default` config key contains handle of the project you want to deploy by default, and should match up to a project in the `projects` config key. The name of the project doesn't matter, since it's only used within the command. You'll want to pair it with the webook deployment key that you'll find under the 'Deployment Hooks' tab of your Envoyer.io project.
 
-It's the bit highlighted in Bold here:
+It's the bit after the `deploy/` here:
 
-> https://envoyer.io/deploy/**4aLDdfsfsd4s6fSzeKGNiK575R45wOwTQULEDJNrj**
+> https://envoyer.io/deploy/4aLDdfsfsd4s6fSzeKGNfakekey75R45wOwTQULEDJNrj
 
 Well, now you're good to go! Check the section at the top of this page for usage examples.
 
 Happy deploying!
 
 Love,
+
 JustPark.
 
 ## Who are you?
@@ -61,3 +66,5 @@ JustPark.
 We're huge fans of Laravel within the company, and we've even got Laravel evangelist, contributor and best-selling author [Dayle Rees](https://twitter.com/daylerees) on the team.
 
 If you're interested in working with us, why not check out our [jobs page](https://www.justpark.com/jobs/).
+
+![Panda](http://i.imgur.com/HkoUPMk.jpg)
