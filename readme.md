@@ -12,17 +12,17 @@ Are you looking for a simple way to deploy your [Envoyer.io](http://envoyer.io) 
 
 With this Artisan command, deploying to Envoyer.io is as simple as 1...2... well... more like this:
 
-    ➜ awesome-laravel-project git:(master) ✗ php artisan envoyer:deploy
+    ➜ php artisan envoyer:deploy
     Deployment request successful!
 
 You can even deploy different projects (although, there's a default option)!
 
-    ➜ awesome-laravel-project git:(master) ✗ php artisan envoyer:deploy --project awesomecake
+    ➜ php artisan envoyer:deploy --project awesomecake
     Deployment request successful!
 
 Shortcuts are awesome!
 
-    ➜ awesome-laravel-project git:(master) ✗ php artisan envoyer:deploy -p awesomecake
+    ➜ php artisan envoyer:deploy -p awesomecake
     Deployment request successful!
 
 ## Installation
