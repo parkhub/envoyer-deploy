@@ -1,5 +1,8 @@
 <img src="https://www.justpark.com/media/img/logos/justpark.svg" width="400" alt="Just Park" />
 
+![Downloads](https://img.shields.io/packagist/dt/justpark/envoyer-deploy.svg)
+![Release](https://img.shields.io/github/release/justpark/envoyer-deploy.svg)
+
 # Envoyer Deploy Command
 
 Hi there!
