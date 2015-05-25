@@ -4,21 +4,32 @@
     "keywords": ["justpark", "envoyer", "envoyer.io", "deploy", "framework", "laravel"],
     "license": "MIT",
     "type": "project",
-    "homepage": "http://www.justpark.com",
+    "homepage": "https://www.justpark.com",
     "authors": [
         {
-            "name":     "Dayle Rees",
-            "email":    "me@daylerees.com",
+            "name": "Dayle Rees",
+            "email": "me@daylerees.com",
             "homepage": "http://daylerees.com",
-            "role":     "Developer"
+            "role": "Developer"
         }
     ],
     "require": {
-        "laravel/framework": "5.*"
+        "php": ">=5.4.0",
+        "laravel/framework": "5.0.*|5.1.*"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "~2.1"
     },
     "autoload": {
         "psr-4": {
             "JustPark\\Deploy\\": "src"
         }
-    }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JustPark\\Tests\\Deploy\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
