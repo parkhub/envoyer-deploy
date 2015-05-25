@@ -72,3 +72,7 @@ We're huge fans of Laravel within the company, and we've even got Laravel evange
 If you're interested in working with us, why not check out our [jobs page](https://www.justpark.com/jobs/).
 
 ![Panda](http://i.imgur.com/HkoUPMk.jpg)
+
+## License
+
+Envoyer Deploy Command is licensed under [The MIT License (MIT)](LICENSE).
