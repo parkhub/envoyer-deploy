@@ -51,6 +51,10 @@ Next, you'll need to add the `ServiceProvider` for this command to the `provider
 
 Finally, you'll want to copy [this config file](config/envoyer.php) into your config directory. The `default` config key contains handle of the project you want to deploy by default, and should match up to a project in the `projects` config key. The name of the project doesn't matter, since it's only used within the command. You'll want to pair it with the webook deployment key that you'll find under the 'Deployment Hooks' tab of your Envoyer.io project.
 
+```bash
+php artisan vendor:publish
+```
+
 It's the bit after the `deploy/` here:
 
 > https://envoyer.io/deploy/4aLDdfsfsd4s6fSzeKGNfakekey75R45wOwTQULEDJNrj
