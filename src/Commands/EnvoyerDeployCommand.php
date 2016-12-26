@@ -81,7 +81,7 @@ class EnvoyerDeployCommand extends Command
     protected function getProjectToDeploy()
     {
         // Determine project to deploy.
-        if (!$project = $this->option('project')) {
+        if (!$project = $this->getProjectToken($this->option('project'))) {
             $project = $this->getDefaultProjectHook();
         }
 
@@ -99,7 +99,19 @@ class EnvoyerDeployCommand extends Command
         $default = $this->config->get(self::CONFIG_DEFAULT);
 
         // Return project hook value.
-        return $this->config->get(sprintf(self::CONFIG_PROJECT, $default));
+        return $this->getProjectToken($default);
+    }
+
+    /**
+     * Retrieve token for the given project.
+     *
+     * @param $project
+     *
+     * @return mixed
+     */
+    protected function getProjectToken($project)
+    {
+        return $this->config->get(sprintf(self::CONFIG_PROJECT, $project));
     }
 
     /**
