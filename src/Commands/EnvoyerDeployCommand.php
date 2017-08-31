@@ -64,7 +64,7 @@ class EnvoyerDeployCommand extends Command
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         // Get the project to deploy.
         $project = $this->getProjectToDeploy();
